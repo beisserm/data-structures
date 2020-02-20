@@ -3,6 +3,13 @@
 
 #include <memory>
 
+/**
+ * Access:  O(1) (array lookup)
+ * Insert:  O(n) (might have to shift all elements to right)
+ * Removal: O(n) (might have to shift all elements to left)
+ * Add:     O(n) (list could be full and have to copy everything)
+ */
+
 template<typename T>
 class ArrayList
 {
